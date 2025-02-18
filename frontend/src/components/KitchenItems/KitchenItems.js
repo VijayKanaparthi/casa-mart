@@ -29,7 +29,10 @@ class KitchenItems extends Component {
     const options = {
       method: "GET",
     }
-    const response = await fetch("http://localhost:4000/kitchen-items", options)
+    const response = await fetch(
+      "https://casa-mart.onrender.com/kitchen-items",
+      options
+    )
     const data = await response.json()
     if (response.ok === true) {
       const responseData = data.data.map((each) => ({

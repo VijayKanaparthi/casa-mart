@@ -24,7 +24,7 @@ class SignUp extends React.Component {
 
   signUp = async (event) => {
     event.preventDefault()
-    const url = "http://localhost:4000/signup"
+    const url = "https://casa-mart.onrender.com/signup"
     const { name, email, password } = this.state
     const userDetails = { name, email, password }
     const options = {

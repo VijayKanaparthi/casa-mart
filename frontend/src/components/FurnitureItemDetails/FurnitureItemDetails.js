@@ -53,7 +53,7 @@ class FurnitureItemDetails extends Component {
     const { params } = match
     const { id } = params
 
-    const url = `http://localhost:4000/getfurnitureitems/${id}`
+    const url = `https://casa-mart.onrender.com/getfurnitureitems/${id}`
     const options = { method: "GET" }
 
     const response = await fetch(url, options)
@@ -72,7 +72,7 @@ class FurnitureItemDetails extends Component {
       method: "GET",
     }
     const response = await fetch(
-      "http://localhost:4000/getfurnitureitems",
+      "https://casa-mart.onrender.com/getfurnitureitems",
       options
     )
     const data = await response.json()

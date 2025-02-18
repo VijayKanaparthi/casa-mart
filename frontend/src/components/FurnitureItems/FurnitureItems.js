@@ -30,7 +30,7 @@ class FurnitureItems extends Component {
       method: "GET",
     }
     const response = await fetch(
-      "http://localhost:4000/getfurnitureitems",
+      "https://casa-mart.onrender.com/getfurnitureitems",
       options
     )
     const data = await response.json()

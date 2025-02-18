@@ -53,7 +53,7 @@ class CleaningItemDetails extends Component {
     const { params } = match
     const { id } = params
 
-    const url = `http://localhost:4000/cleaning-items/${id}`
+    const url = `https://casa-mart.onrender.com/cleaning-items/${id}`
     const options = { method: "GET" }
 
     const response = await fetch(url, options)
@@ -72,7 +72,7 @@ class CleaningItemDetails extends Component {
       method: "GET",
     }
     const response = await fetch(
-      "http://localhost:4000/cleaning-items",
+      "https://casa-mart.onrender.com/cleaning-items",
       options
     )
     const data = await response.json()

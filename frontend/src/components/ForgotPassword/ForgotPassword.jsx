@@ -13,7 +13,7 @@ class ForgotPassword extends React.Component {
 
   forgotPassword = async () => {
     const { email } = this.state
-    const url = "http://localhost:4000/forgot-password"
+    const url = "https://casa-mart.onrender.com/forgot-password"
     const userDetails = { email }
     const options = {
       method: "POST",

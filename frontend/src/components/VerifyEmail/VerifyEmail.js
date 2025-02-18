@@ -23,7 +23,7 @@ class VerifyEmail extends Component {
 
   submitToken = async () => {
     const { code } = this.state
-    const url = "http://localhost:4000/verify-email"
+    const url = "https://casa-mart.onrender.com/verify-email"
     const userDetails = { code }
     const options = {
       method: "POST",

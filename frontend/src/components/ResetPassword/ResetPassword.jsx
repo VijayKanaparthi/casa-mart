@@ -11,7 +11,7 @@ class ResetPassword extends React.Component {
     const { match } = this.props
     const { params } = match
     const { token } = params
-    const url = `http://localhost:4000/reset-password/${token}`
+    const url = `https://casa-mart.onrender.com/reset-password/${token}`
     const userDetails = { password }
     const options = {
       method: "POST",

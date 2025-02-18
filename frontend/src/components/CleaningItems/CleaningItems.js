@@ -30,7 +30,7 @@ class CleaningItems extends Component {
       method: "GET",
     }
     const response = await fetch(
-      "http://localhost:4000/cleaning-items",
+      "https://casa-mart.onrender.com/cleaning-items",
       options
     )
     const data = await response.json()

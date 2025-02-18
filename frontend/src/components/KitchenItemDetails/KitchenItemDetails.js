@@ -52,7 +52,7 @@ class KitchenItemDetails extends Component {
     const { params } = match
     const { id } = params
 
-    const url = `http://localhost:4000/kitchen-items/${id}`
+    const url = `https://casa-mart.onrender.com/kitchen-items/${id}`
     const options = { method: "GET" }
 
     const response = await fetch(url, options)
@@ -70,7 +70,10 @@ class KitchenItemDetails extends Component {
     const options = {
       method: "GET",
     }
-    const response = await fetch("http://localhost:4000/kitchen-items", options)
+    const response = await fetch(
+      "https://casa-mart.onrender.com/kitchen-items",
+      options
+    )
     const data = await response.json()
     if (response.ok === true) {
       const responseData = data.data.map((each) => ({

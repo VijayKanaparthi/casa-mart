@@ -53,7 +53,7 @@ class LivingItemsDetails extends Component {
     const { params } = match
     const { id } = params
 
-    const url = `http://localhost:4000/livingroomitems/${id}`
+    const url = `https://casa-mart.onrender.com/livingroomitems/${id}`
     const options = { method: "GET" }
 
     const response = await fetch(url, options)
@@ -71,7 +71,7 @@ class LivingItemsDetails extends Component {
       method: "GET",
     }
     const response = await fetch(
-      "http://localhost:4000/livingroomitems",
+      "https://casa-mart.onrender.com/livingroomitems",
       options
     )
     const data = await response.json()
